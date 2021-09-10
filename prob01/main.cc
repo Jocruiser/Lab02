@@ -31,10 +31,6 @@ int main() {
 
 // image file name 
   Image my_image(500, 500);
-  my_image.SaveImageBmp("pizza.bmp");
-
-
-
 
   std::cout << "Welcome to PizzaMaker 2.0!" << std::endl;
   std::cout << "\nWould you like a pizza?"
@@ -46,12 +42,12 @@ int main() {
     return 0;
   }
   
-  std::cout << "\nWould you like tomato sauce" << "\n(y/n): ";
+  std::cout << "\nWould you like tomato sauce?" << "\n(y/n): ";
   std::cin >> answer;
   if ((answer=='Y') || (answer=='y')) {
     AddSauce(my_image);
   } else {
-    return 0;
+    
   }
   
   std::cout << "\nWould you like cheese with that?" << "\n(y/n): ";
@@ -59,15 +55,15 @@ int main() {
   if ((answer=='Y') || (answer=='y')) {
     AddCheese(my_image);
   } else {
-    return 0;
+    
   }
   
-  std::cout << "\nWould you like pepperoni" << "\n(y/n): ";
+  std::cout << "\nWould you like pepperoni?" << "\n(y/n): ";
   std::cin >> answer;
   if ((answer=='Y') || (answer=='y')) {
     AddPepperoni(my_image);
   } else {
-    return 0;
+    
   }
   
   std::cout << "\nWould you like jalapeno with that?" << "\n(y/n): ";
@@ -84,12 +80,12 @@ int main() {
   if ((answer=='Y') || (answer=='y')) {
     AddOnion(my_image);
   } else {
-    return 0;
+    
   }
   
   std::cout << "\nGreat! Your pizza is at pizza.bmp. Enjoy!" << std::endl; 
   
-  
+  my_image.SaveImageBmp("pizza.bmp");
   
   return 0;
 }
