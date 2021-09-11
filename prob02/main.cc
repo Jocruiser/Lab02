@@ -9,7 +9,7 @@ int main() {
   std::string answer;
   
   std::cout << "Do you like chocolate chip cookies? Enter \"yes\" or \"no\": ";
-  std::getline (std::cin,answer);
+  std::getline (std::cin, answer);
   bool likes_cookies = false;
   
     likes_cookies = GetYesOrNoInput(); 
@@ -22,6 +22,8 @@ int main() {
   } else {
     std::cout << "To each their own!" << std::endl;
   }
+  
+  
   
   return 0;
 }

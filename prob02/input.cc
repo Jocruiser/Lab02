@@ -21,7 +21,7 @@ bool GetYesOrNoInput() {
  	} 
  	else {
  	std::cout << "Sorry, I didn't understand. Try again: ";
- 	std::getline (std::cin,answer);
+ 	std::getline (std::cin, answer);
  	}
  	}
  	
